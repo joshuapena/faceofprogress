@@ -1,38 +1,43 @@
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700);
 
 body {
-  font-family: "Ubuntu Mono";
-  background-color: #EEE;
-  color: #888;
   font-size: 16pt;
-  line-heigt: 1.4;
+  line-height: 1.4;
+  color: #333;
+  font-family: "Ubuntu Mono";
   font-weight: 400;
-  margin: 2em;
+}
+
+#canvasContainer {
+	text-align: center;
+}
+
+#world {
+	border: 1px solid black;
+	display: none;
 }
 
 h1 {
   font-weight: 700;
 }
 
-#titleButton {
-	-moz-box-shadow:inset 0px 0px 16px 3px #2b3285;
-	-webkit-box-shadow:inset 0px 0px 16px 3px #2b3285;
-	box-shadow:inset 0px 0px 16px 3px #2b3285;
-	background-color:#3d3166;
-	-moz-border-radius:11px;
-	-webkit-border-radius:11px;
-	border-radius:11px;
-	border:1px solid #1f2f47;
-	display:inline-block;
-	cursor:pointer;
-	font-size:16px;
-	padding:6px 24px;
-	text-decoration:none;
+#startButton {
+	background-color: #44c767;
+	-moz-border-radius: 28px;
+	-webkit-border-radius: 28px;
+	border-radius: 28px;
+	border: 1px solid #18ab29;
+	color: #ffffff;
+	padding: 16px 31px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #2f6627;
 }
-#titleButton:hover {
-	background-color:#382d66;
+
+#startButton:hover {
+	background-color: #5cbf2a;
 }
-#titleButton:active {
-	position:relative;
-	top:1px;
+
+#startButton:active {
+	position: relative;
+	top: 1px;
 }

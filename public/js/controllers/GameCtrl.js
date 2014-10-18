@@ -22,7 +22,7 @@ controller('GameController', function($scope, $location, cssInjector) {
         for (i = 0; i < 17; i++) {
             spriteNames.push("explosion/explosion-" + i);
         }
-        spriteLoader.load("./assets/images", spriteNames, ".png", function (loadedSprites) {
+        spriteLoader.load("./assets/game/img", spriteNames, ".png", function (loadedSprites) {
             for (var spriteName in loadedSprites) {
                 sprites[spriteName] = loadedSprites[spriteName];
             }
@@ -32,6 +32,8 @@ controller('GameController', function($scope, $location, cssInjector) {
     }
 
     function initSound() {
+        var audio = {};
+        /*
         var soundLoader = new SoundLoader();
         var audio = {};
         var audioNames = ["casanova", "jumpFins", "pewPewBizNiss", "enemyDamageBraqoon", "meow", "pokemonRuby", "itsPossible", "underTheSea"];
@@ -42,6 +44,7 @@ controller('GameController', function($scope, $location, cssInjector) {
                 audio[audioName].setVolume(20);
             }
         });
+        */
         return audio;
     }
 });
