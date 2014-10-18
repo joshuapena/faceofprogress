@@ -86,8 +86,10 @@ Player.prototype.update = function() {
 			this.jumping = true;
 			this.jumpDown = false;
 			this.velY = -this.speed * 2;
+            /*
 			this.audio[this.jumpAudio].stop();
 			this.audio[this.jumpAudio].play();
+            */
 		}
 	}
 	
@@ -226,8 +228,10 @@ Player.prototype.shoot = function() {
 			//spriteName: 'playerBullet'
 		}, this.audio
 	));
+    /*
 	this.audio[this.shootAudio].stop();
 	this.audio[this.shootAudio].play();
+    */
 };
 
 Player.prototype.kill = function() {
@@ -244,10 +248,10 @@ Player.prototype.kill = function() {
 	*/
 };
 
-document.body.addEventListener("keydown", function(e) {
+addEventListener("keydown", function(e) {
 	keydown[e.keyCode] = true;
 });
 
-document.body.addEventListener("keyup", function(e) {
+addEventListener("keyup", function(e) {
 	keydown[e.keyCode] = false;
 });

@@ -101,11 +101,12 @@ var update = function (game, CatEnemy, Bullet, audio, Explosion) {
 	} else if (bossTime && round == 0) {
 		game.world.boss.push(new CatBoss(game.world, Bullet, audio));
 
-		
+		/*
 		audio.casanova.stop();
 		audio.pokemonRuby.loop();
 		audio.pokemonRuby.setVolume(20);
 		audio.pokemonRuby.play();
+        */
 		bossTime = false;
 	} else if (minionTime && round == 1) {
 		if (Math.random() < 0.02) {
@@ -123,10 +124,12 @@ var update = function (game, CatEnemy, Bullet, audio, Explosion) {
 				}
 			}
 		}
-		
+	
+        /*
 		audio.pokemonRuby.stop();
 		audio.underTheSea.loop();
 		audio.underTheSea.play();
+        */
 		
 		if (nextStage) {
 			bossTime = true;
@@ -151,11 +154,13 @@ var update = function (game, CatEnemy, Bullet, audio, Explosion) {
 			x: 500,
 			y: 191,
 		}));
-		
+	
+        /*
 		audio.underTheSea.stop();
 		audio.itsPossible.setVolume(100);
 		audio.itsPossible.loop();
 		audio.itsPossible.play();
+        */
 		
 		bossTime = false;
 	} else if (minionTime && round == 2) {
