@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="faceofprogress">
+    <head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<base href="/">
+
+		<title>Face of Progress</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="assets/css/default.css"
+
+		<!-- JS -->
+		<script src="libs/angular/angular.min.js"></script>
+		<script src="libs/angular-route/angular-route.min.js"></script>
+		<script src="libs/angular-resource/angular-resource.js"></script>
+		<script src="libs/angular-css-injector/angular-css-injector.js"></script>
+
+		<!-- Services -->
+		<script src="js/appServices.js"></script>
+
+		<!-- Controllers -->
+		<script src="js/controllers/CtrlModule.js"></script>
+		<script src="js/controllers/HomeCtrl.js"></script>
+		<script src="js/controllers/GameCtrl.js"></script>
+
+		<!-- Main module and route files -->
+		<script src="js/appRoutes.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+    <body>
+		<div ng-view></div>
+    </body>
+</html>
