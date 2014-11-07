@@ -6,4 +6,9 @@ controller('HomeController', function($scope, $location, cssInjector) {
         $location.path('/game');
         console.log("foo game");
     };
+
+    $scope.othergame = function() {
+        $location.path('/othergameproject');
+        console.log("foo othergame");
+    };
 });

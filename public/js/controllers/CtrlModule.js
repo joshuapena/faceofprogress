@@ -1,1 +1,1 @@
-angular.module('appControllers', ['appServices', 'HomeCtrl', 'GameCtrl']);
+angular.module('appControllers', ['appServices', 'HomeCtrl', 'GameCtrl', 'OtherGameCtrl']);
